@@ -1,0 +1,50 @@
+.targets {
+  display : grid;
+
+  grid-template-areas : 
+  "root root  js-target js-target  "
+  "counter1  counter1      counter2     counter2  "
+  "counter3  counter3      counter4     counter4  ";
+  grid-template-columns : [col-1] 25% [col-2] 25% [col-3] 25% [col-4] 25%;
+  grid-template-rows : 35vh 35vh 35vh;
+
+
+  .big {
+    font-size : 1.4rem;
+    display : block;
+    margin-top : 1rem;
+    width:20rem;
+    margin: auto;
+    margin-top:1rem;
+    @include offsetShadow(0px,2px,4px, 2px);
+  
+  }
+}
+
+.root {
+  grid-area : root;
+}
+
+.js-target {
+  grid-area : js-target;
+}
+
+.counter1{
+  grid-area : counter1;
+
+}
+
+.counter2{
+  grid-area : counter2;
+
+}
+
+.counter3{
+  grid-area : counter3;
+
+}
+
+.counter4{
+  grid-area : counter4;
+
+}

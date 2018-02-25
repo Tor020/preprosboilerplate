@@ -1,22 +1,16 @@
 //utilities and mixins etc
 @import "sass/AllSassFiles/_importsFromParentFolder.scss";
 
-//temp grid
-// @import "sass/AllSassFiles/grid-example/_hamster_grid.scss";
-
-
-
 // Should have variables and dependencies other sass files use
-@import "sass/_base";
+@import "sass/core/_base";
 
 // Styles that are applied to every page
-@import "sass/_global.scss";
+@import "sass/core/_global.scss";
 
 // Index Page Specifics
+@import "sass/core/_alignedForm.scss";
 @import "sass/_index.scss";
 
-@import "sass/_alignedForm.scss"
 
-
-
+@import "sass/_targetsLayout.scss";
 

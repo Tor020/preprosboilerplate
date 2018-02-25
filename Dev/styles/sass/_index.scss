@@ -4,22 +4,9 @@
   .docsSection {
     background-blend-mode : luminosity;
     // filter:blur(.1rem);  
+    @extend %center;
   }
 
-/* Targets */
-
-  .targets {
-
-    .big {
-      font-size : 1.4rem;
-
-      display : block;
-
-      margin-top : 1rem;
-
-      @include offsetShadow(0px,2px,4px, 2px);
-    }
-  }
 
 
 /* Syntax Examples */
@@ -29,18 +16,11 @@
     filter : blur(0.5rem);
   }
 
-  .syntaxExamples {
+  .syntaxExamples {    @extend %center;
     background-color : brown;
   }
 
-/* Crash Test Form */
+/*form */
+  .form{
 
-  #crashTestForm {
-    background-color : hsla(0, 100%, 50%, 0.241);
-  }
-  #crashTestFieldSet {
-
-    background-color : hsla(240, 100%, 50%, 0.323);
-  }
-
-  
+  }  
