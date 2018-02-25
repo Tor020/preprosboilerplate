@@ -3,31 +3,66 @@
   <title>PrePros Boilerplate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto">
+  <link rel="stylesheet" href="./css/styles.css">
   <body>
-    <form>
-      <h1>Pilot Testing Form</h1>
-      <fieldset> 
-        <input type="checkbox">
-        <input type="checkbox">
-        <input type="radio">
-        <input type="radio">
-        <input type="radio">
-        <input type="text-area">
+    <h1>PrePros Boilerplate</h1>
+    <div class="docsSection">
+      <h2>Misc Helpful Docs</h2>A div, with class 'docsSection' 
+      <p><a href="https://devhints.io/pug">Devhints Pug cheatsheet</a></p><br><a href="https://pugjs.org/language/attributes.html">Pug Reference Page</a>
+    </div><br><br>
+    <div class="targets">
+      <div class="js-target" id="js-target">
+        <h1>Javascript Target</h1>this div is the target for javascript to test
+        class name and id <span class="big">'js-target' </span>
+      </div>
+      <div class="root" id="root">
+        <h1>Root JS Target</h1>class name and id<span class="big">'root'</span>
+      </div>
+    </div><br><br>
+    <div class="syntaxExamples" id="syntaxExamples">
+      <div class="classOne classTwo">text inside a div with 'classOne' and 'classTwo'</div>
+    </div><br><br>
+    <form class="form" id="form" autocomplete="on">
+      <h1>Form</h1>
+      <fieldset>
+        <legend>User Form</legend>
+        <div class="control-group">
+          <label for="foo">Name</label>
+          <input id="foo" type="text" placeholder="Enter something here...">
+        </div>
+        <div class="control-group">
+          <label for="email">Email Address</label>
+          <input id="email" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" type="email" placeholder="Email Address">
+        </div>
+        <div class="control-group">
+          <label for="name">Username</label>
+          <input id="name" type="text" placeholder="Username">
+        </div>
+        <div class="control-group">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Password">
+        </div>
       </fieldset>
+      <fieldset>
+        <input class="radio" name="interest" type="checkbox" id="coding" value="coding">
+        <label for="coding">Coding</label>
+        <input class="radio" name="interest" type="checkbox" id="memes" value="music">
+        <label for="memes">Memes</label>
+        <input class="radio" name="interest" type="checkbox" id="exdeeee" value="music">
+        <label for="exdeeee">exdeeee</label>
+      </fieldset>
+      <fieldset>
+        <input class="checkbox" name="options" id="choice1" type="radio" value="option1">
+        <label for="choice1">Option 1 </label>
+        <input class="checkbox" name="options" id="choice2" type="radio" value="option2">
+        <label for="choice2">Option 2</label>
+        <input class="checkbox" name="options" id="choice3" type="radio" value="option3">
+        <label for="choice3">Option 3</label>
+      </fieldset>
+      <button class="btn" id="submit" type="submit">Submit</button>
     </form>
-    <h1>
-       PrePros Boilerplate</h1>
-    <p><a href="https://devhints.io/pug">Devhints Pug cheatsheet</a></p>
-    <div class="classExample">A div, with class 'classExample' <br><br><a href="https://pugjs.org/language/attributes.html">Pug Reference Page</a></div>
-    <div class="classOne classTwo">text inside a div with 'classOne' and 'classTwo'</div><br>
-    <div class="js-target" id="js-target">
-      <h1>Javascript Target</h1>this div is the target for javascript to test<br><br>class name and id <br><br>'js-target' 
-    </div>
-    <div class="root" id="root">
-      <h1>Root JS Target</h1>class name and id<br><br>'root'
-    </div>
+    <script src="scripts/bundle.js"></script>
   </body>
-  <script src="scripts/bundle.js"></script>
 </html>

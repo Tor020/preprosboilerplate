@@ -7,11 +7,20 @@ body {
 
   max-width : 30rem;
   margin : 0 auto;
-  padding-top : 10rem;
+  padding-top : 1rem;
 
+  background-color:hsla(0, 0%, 40%, 0.60);
   text-align : center;
 }
 h1{
   font-family: Montserrat, sans-serif;
+}
+div{
+  margin:1rem;
+}
+form{
+margin-bottom:5rem;
+border-top:green 3px solid;
+
 }
 

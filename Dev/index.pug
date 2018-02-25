@@ -4,55 +4,33 @@ html
 
   include ./head.pug
 
+    //- setup grid layout for the javascript targets
+    //- add more syntax examples
+    //- implement dat.gui.js
 
   body
 
-    form
-      h1 Pilot Testing Form
-      fieldset  
-        input(type="checkbox")
-        input(type="checkbox")
-        input(type="radio")
-        input(type="radio")
-        input(type="radio")
-        input(type="text-area")
-    h1 
-      | PrePros Boilerplate
+    h1 PrePros Boilerplate
+      
 
-    p
-      a(href="https://devhints.io/pug") Devhints Pug cheatsheet
-    .classExample
-      | A div, with class 'classExample' 
+    include ./pug/docsSection.pug
+    
+    br
+    br
 
-      br 
-      br 
+    include ./pug/targets.pug
+    
+    br
+    br
 
-      a(href="https://pugjs.org/language/attributes.html") Pug Reference Page
-
-
-    div.classOne.classTwo
-      | text inside a div with 'classOne' and 'classTwo'
+    include ./pug/syntaxExamples.pug
 
     br
-    div.js-target#js-target
-      h1 Javascript Target
-      | this div is the target for javascript to test
-      br
-      br
-      | class name and id 
-      br
-      br
-      | 'js-target' 
+    br
 
+    include ./pug/form.pug
 
-    div.root#root
-      h1 Root JS Target
-      | class name and id
-      br
-      br
-      | 'root'
+    //- include ./pug/pureCssForm.pug
 
-
-  include ./scripts.pug
-
+    include ./scripts.pug
 

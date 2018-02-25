@@ -10,8 +10,16 @@
 @mixin rounded-corner($arc) {
   border-radius : $arc;
 }
-@mixin shadow($xval, $yval, $blur, $spread){
-  box-shadow: $xval $yval $blur $spread rgba(0,0,0,0.71);
+
+//use for standard content emphasization
+// use as alternative to border
+@mixin offsetShadow($xval, $yval, $blur, $spread){
+  box-shadow: $xval $yval $blur $spread hsla(0, 0%, 0%, 0.2);
+}
+
+//use for wells and form inputs
+@mixin insetShadow($xval, $yval, $blur, $spread){
+  box-shadow: inset $xval $yval $blur $spread hsla(0, 0%, 0%, 0.08);
 }
 
 //http://www.castlecss.com/mixins.html
