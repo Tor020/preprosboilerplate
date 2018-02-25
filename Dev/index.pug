@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+
+  include ./head.pug
+
+
+  body
+
+    form
+      h1 Pilot Testing Form
+      fieldset  
+        input(type="checkbox")
+        input(type="checkbox")
+        input(type="radio")
+        input(type="radio")
+        input(type="radio")
+        input(type="text-area")
+    h1 
+      | PrePros Boilerplate
+
+    p
+      a(href="https://devhints.io/pug") Devhints Pug cheatsheet
+    .classExample
+      | A div, with class 'classExample' 
+
+      br 
+      br 
+
+      a(href="https://pugjs.org/language/attributes.html") Pug Reference Page
+
+
+    div.classOne.classTwo
+      | text inside a div with 'classOne' and 'classTwo'
+
+    br
+    div.js-target#js-target
+      h1 Javascript Target
+      | this div is the target for javascript to test
+      br
+      br
+      | class name and id 
+      br
+      br
+      | 'js-target' 
+
+
+    div.root#root
+      h1 Root JS Target
+      | class name and id
+      br
+      br
+      | 'root'
+
+
+  include ./scripts.pug
+
+

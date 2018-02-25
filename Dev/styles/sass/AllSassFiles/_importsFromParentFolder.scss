@@ -1,0 +1,22 @@
+// to add a separate file to compile and draw from just add another .scss file without an underscore for the filename and it will get compiled into the css folder
+// @import './AllSassFiles/baseUtilities/_spacerRules.scss';
+
+
+
+@import './baseUtilities/_variables.scss';
+@import './baseUtilities/_mixins.scss';
+@import './baseUtilities/_placeholders.scss';  
+
+
+
+
+// /* grid example */
+// @import './AllSassFiles/grid-example/_hamster_grid.scss';
+// @import './AllSassFiles/grid-example/_hamster_grid_mediaQ.scss';
+ 
+/* Importing Layout FIles */
+// @import './AllSassFiles/pages/global.scss';
+// @import './AllSassFiles/pages/index.scss';
+
+
+           
