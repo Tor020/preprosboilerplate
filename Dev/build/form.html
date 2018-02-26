@@ -1,0 +1,40 @@
+
+<form class="form" id="form" autocomplete="on">
+  <h1>Form</h1>
+  <fieldset>
+    <legend>User Form</legend>
+    <div class="control-group">
+      <label for="foo">Name</label>
+      <input id="foo" type="text" autocomplete="name" placeholder="Enter something here..."/>
+    </div>
+    <div class="control-group">
+      <label for="email">Email Address</label>
+      <input id="email" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" autocomplete="email" type="email" placeholder="Email Address"/>
+    </div>
+    <div class="control-group">
+      <label for="name">Username</label>
+      <input id="name" type="text" autocomplete="username" placeholder="Username"/>
+    </div>
+    <div class="control-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" placeholder="Password"/>
+    </div>
+  </fieldset>
+  <fieldset>
+    <input class="radio" name="interest" type="checkbox" id="coding" value="coding"/>
+    <label for="coding">Coding</label>
+    <input class="radio" name="interest" type="checkbox" id="memes" value="music"/>
+    <label for="memes">Memes</label>
+    <input class="radio" name="interest" type="checkbox" id="exdeeee" value="music"/>
+    <label for="exdeeee">exdeeee</label>
+  </fieldset>
+  <fieldset>
+    <input class="checkbox" name="options" id="choice1" type="radio" value="option1"/>
+    <label for="choice1">Option 1 </label>
+    <input class="checkbox" name="options" id="choice2" type="radio" value="option2"/>
+    <label for="choice2">Option 2</label>
+    <input class="checkbox" name="options" id="choice3" type="radio" value="option3"/>
+    <label for="choice3">Option 3</label>
+  </fieldset>
+  <button class="btn" id="submit" type="submit">Submit</button>
+</form>
